@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import meRoutes from "./routes/me.route.js";
+import { connectDB } from "./libs/db.js";
 
 dotenv.config();
 
@@ -11,4 +12,5 @@ app.use("/api/me", meRoutes);
 
 app.listen(PORT, () => {
   console.log("Server is running on port " + PORT);
+  connectDB();
 });
