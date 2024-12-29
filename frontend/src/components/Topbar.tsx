@@ -5,8 +5,8 @@ const Topbar = () => {
   return (
     <div className="w-full p-3 flex flex-row h-auto shadow-[0_0_10px_#67E8F9] items-center justify-between rounded-lg">
       {/* Logo */}
-      <div className="h-8 cursor-pointer lg:w-32 ml-6 mb-0 text-2xl text-center font-semibold text-white/90 hover:text-white ">
-        Criss Siiu
+      <div className="h-8 cursor-pointer lg:w-32 ml-20 mb-0 mr-6 text-2xl text-center font-semibold text-white/90 hover:text-white">
+        CrisSiiu
       </div>
 
       {/* Button */}
@@ -61,7 +61,7 @@ const Topbar = () => {
         <Link to={"https://github.com/tsdevtool/portfolio.git"}>
           <Avatar className="shadow-[0_0_10px_#67E8F9] hover:shadow-[0_0_16px_#67E8F9]">
             <AvatarImage src="https://avatars.githubusercontent.com/u/122494878?v=4&size=64" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>TS</AvatarFallback>
           </Avatar>
         </Link>
       </div>
