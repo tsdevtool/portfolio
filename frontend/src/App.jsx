@@ -1,12 +1,12 @@
-import { Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import MainHome from "./pages/MainHome";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
+      <MainHome />
+      {/* <Routes>
+        <Route path="/" element={<MainHome />} />
+      </Routes> */}
     </>
   );
 }
