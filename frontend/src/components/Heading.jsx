@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 const Heading = ({ text, size = 32, font = "bold" }) => {
   const splitText = text.split("");
   return (
-    <div>
+    <div className="flex items-center">
       {splitText.map((char, index) => (
         <span
           key={index}
