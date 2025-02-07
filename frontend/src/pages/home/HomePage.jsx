@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="h-auto min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center text-center px-6"
+      className="w-full h-auto min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center text-center px-24 "
     >
       <div className="sm:mt-20">
         {" "}

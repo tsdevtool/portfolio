@@ -5,7 +5,8 @@
 .my-bg {
   background: linear-gradient(to bottom, #f5ebfa, #49225b);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
-    url("bg-1.jpg");
+    url("bg-3.gif");
+  background-size: contain;
 }
 
 html {
