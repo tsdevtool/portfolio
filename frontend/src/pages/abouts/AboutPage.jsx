@@ -4,7 +4,7 @@ const AboutPage = () => {
   return (
     <section
       id="about"
-      className="w-full min-h-screen h-auto flex flex-col  items-center px-24 mt-0 scroll-mt-24 "
+      className="w-full min-h-screen h-auto flex flex-col  items-center px-24 mt-0 scroll-mt-20 "
     >
       {/* Introduction */}
       <Heading text={"Introduction"} size={32} font="" />
