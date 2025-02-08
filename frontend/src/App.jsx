@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import AboutPage from "./pages/abouts/AboutPage";
 import Achievements from "./pages/abouts/Achievements";
 import HomePage from "./pages/home/HomePage";
+import ProjectsPage from "./pages/projects/ProjectsPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       /> */}
       <AboutPage />
       <Achievements />
+      <ProjectsPage />
     </div>
   );
 }
