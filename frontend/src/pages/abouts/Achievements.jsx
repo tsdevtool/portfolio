@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Heading from "../../components/Heading";
 import { Aperture } from "lucide-react";
 const Achievements = () => {
@@ -31,6 +32,7 @@ const Achievements = () => {
       organization: "Hoai An Education Promotion Association", //Tên tổ chức
     },
   ];
+
   return (
     <section
       id="achievement"
@@ -39,7 +41,52 @@ const Achievements = () => {
       <Heading text={"What have I achieved so far?"} size={32} font="" />
       <Heading text={"My achievements"} size={46} font="bold" />
       <div className="relative">
-        <div className="absolute top-0 left-24 md:left-1/2 w-1 bg-gray-200 h-full transform md:-translate-x-1/2" />
+        <div
+          className={`absolute top-0 left-24 md:left-1/2 w-1 bg-gray-200 h-full transform md:-translate-x-1/2 flex flex-col`}
+        >
+          {timelineData
+            .slice()
+            .reverse()
+            .map((item, index) => (
+              <div
+                key={index}
+                className={` h-1/${timelineData.length}  flex flex-col justify-center items-center relative`}
+              >
+                <div
+                  className={`flex flex-row ${
+                    index % 2 === 0
+                      ? "max-md:flex-row-reverse "
+                      : "flex-row-reverse"
+                  }`}
+                >
+                  <>
+                    <div
+                      className={`px-5 relative ${
+                        index % 2 === 0
+                          ? "md:left-[60px] max-md:right-[60px]"
+                          : "right-[60px]"
+                      }`}
+                    >
+                      <div className="bg-gray-800 p-2 rounded-full border-4 border-purple-500">
+                        <Aperture />
+                      </div>
+                    </div>
+                    <div
+                      className={`text-xl font-semibold relative top-2 h-8 transition-none ${
+                        index % 2 === 0
+                          ? "md:left-14 max-md:right-7"
+                          : "right-7"
+                      }`}
+                      style={{ width: "120px" }}
+                    >
+                      {item.time}
+                    </div>
+                  </>
+                </div>
+              </div>
+            ))}
+        </div>
+
         {timelineData
           .slice()
           .reverse()
@@ -52,27 +99,7 @@ const Achievements = () => {
                   : " flex-row-reverse"
               }`}
             >
-              <div
-                className={`w-1/2 flex  ${
-                  index % 2 === 0 ? "justify-end ml-12" : "justify-start mr-12"
-                } items-center relative`}
-              >
-                {index % 2 === 0 && (
-                  <div className="mr-4 text-xl font-semibold hover:text-blue-400">
-                    {item.time}
-                  </div>
-                )}
-                <div className="bg-gray-800 p-2 rounded-full border-4 border-purple-500">
-                  <Aperture />
-                </div>
-                {index % 2 !== 0 && (
-                  <div className="ml-4 text-xl font-semibold hover:text-blue-400">
-                    {item.time}
-                  </div>
-                )}
-              </div>
-
-              <div className={`md:w-1/2 max-md:ml-24 p-4`}>
+              <div className={`md:w-1/2 max-md:ml-24 p-4 -mx-4`}>
                 <div className="bg-gray-800/80 p-6 rounded-lg shadow-lg -z-10">
                   <h3 className="text-xl font-bold text-center mb-2">
                     {item.title} -{" "}
