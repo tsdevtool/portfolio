@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Heading from "../../components/Heading";
 import { Aperture } from "lucide-react";
 const Achievements = () => {
@@ -31,6 +30,15 @@ const Achievements = () => {
       image: "/sinhviengioi-2.jpg", //Hình ảnh minh chứng
       organization: "Hoai An Education Promotion Association", //Tên tổ chức
     },
+    {
+      id: 4,
+      title: "Information Technology Talent Search Contest", // Tiêu đề
+      time: "2024", //Thời gian
+      description:
+        "The Ho Chi Minh City IT Talent Search Contest is a contest to search for talents in many fields for students of schools in Ho Chi Minh City. Although we only won the consolation prize, my teammates and I are still proud of it.", //Mô tả
+      image: "/codehub.jpg", //Hình ảnh minh chứng
+      organization: "HCA - Hoi tin hoc Tp.HCM", //Tên tổ chức
+    },
   ];
 
   return (
@@ -50,7 +58,8 @@ const Achievements = () => {
             .map((item, index) => (
               <div
                 key={index}
-                className={` h-1/${timelineData.length}  flex flex-col justify-center items-center relative`}
+                className={`flex flex-col justify-center items-center relative`}
+                style={{ height: `${(1 / timelineData.length) * 100}%` }}
               >
                 <div
                   className={`flex flex-row ${
