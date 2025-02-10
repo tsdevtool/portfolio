@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 const Heading = ({ text, size = 32, font = "bold" }) => {
   const splitText = text.split("");
   return (
-    <div className="flex items-center">
+    <div className="flex flex-wrap items-center">
       {splitText.map((char, index) => (
         <span
           key={index}
-          className={`inline-block transform-none cursor-pointer hover:text-blue-500  hover:scale-150 font-${font} px-2 py-1`}
+          className={`inline-block transform-none cursor-pointer hover:text-cyan-500  hover:scale-150 font-${font} px-2 py-1 `}
           style={{ fontSize: size }}
         >
           {char}

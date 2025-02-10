@@ -76,7 +76,7 @@ const Achievements = () => {
                           : "right-[60px]"
                       }`}
                     >
-                      <div className="bg-gray-800 p-2 rounded-full border-4 border-purple-500">
+                      <div className="bg-gray-800 p-2 rounded-full border-4 border-cyan-500">
                         <Aperture />
                       </div>
                     </div>
@@ -112,7 +112,7 @@ const Achievements = () => {
                 <div className="bg-gray-800/80 p-6 rounded-lg shadow-lg -z-10">
                   <h3 className="text-xl font-bold text-center mb-2">
                     {item.title} -{" "}
-                    <span className="text-blue-500">{item?.time}</span>
+                    <span className="text-cyan-500">{item?.time}</span>
                   </h3>
                   <p className="italic text-sm mb-4 text-right">
                     {item?.organization}
