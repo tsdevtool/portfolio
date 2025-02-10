@@ -30,7 +30,7 @@ const HomePage = () => {
               variants={textVariants}
               initial="hidden"
               animate="visible"
-              className="text-blue-400"
+              className="text-cyan-400"
             >
               {char}
             </motion.span>
@@ -51,10 +51,10 @@ const HomePage = () => {
           className="mt-10"
         >
           <a
-            href="#about"
-            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition"
+            href="#contact"
+            className="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition"
           >
-            Get Started
+            Contact me
           </a>
         </motion.div>
       </div>

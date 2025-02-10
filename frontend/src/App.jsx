@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/abouts/AboutPage";
 import Achievements from "./pages/abouts/Achievements";
+import ContactPage from "./pages/contact/ContactPage";
 import HomePage from "./pages/home/HomePage";
 import ProjectsPage from "./pages/projects/ProjectsPage";
 
@@ -16,6 +17,7 @@ function App() {
       <AboutPage />
       <Achievements />
       <ProjectsPage />
+      <ContactPage />
     </div>
   );
 }
