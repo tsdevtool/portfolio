@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/abouts/AboutPage";
 import Achievements from "./pages/abouts/Achievements";
@@ -18,6 +19,7 @@ function App() {
       <Achievements />
       <ProjectsPage />
       <ContactPage />
+      <Footer />
     </div>
   );
 }

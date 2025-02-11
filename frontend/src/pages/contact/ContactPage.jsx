@@ -13,7 +13,7 @@ const ContactPage = () => {
   return (
     <section
       id="contact"
-      className="w-full min-h-screen h-auto mt-4 px-24 flex flex-col justify-start items-center mb-24 scroll-mt-20"
+      className="w-full h-auto mt-4 px-24 flex flex-col justify-start items-center mb-10 scroll-mt-20"
     >
       <Heading text={"FIND ME ON"} />
       <Heading text={"Feel free to connect with me"} />
