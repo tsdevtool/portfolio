@@ -20,12 +20,13 @@ const ContactPage = () => {
 
       {/* Social media */}
       <div className="flex space-x-6 mt-7">
-        <button
+        <a
+          href="#mail"
           onClick={() => setOpenMail(true)}
           className="p-2 text-cyan-500 bg-white rounded-full border-2 border-cyan-600 hover:ring-2 hover:ring-cyan-500 transition-shadow duration-300"
         >
           <MailIcon className="w-6 h-6" />
-        </button>
+        </a>
         <a
           href="https://github.com/tsdevtool"
           className="p-2 text-cyan-500 bg-white rounded-full border-2 border-cyan-600 hover:ring-2 hover:ring-cyan-500 transition-shadow duration-300"
@@ -48,6 +49,7 @@ const ContactPage = () => {
       <AnimatePresence>
         {openMail && (
           <motion.form
+            id="mail"
             className="flex flex-col gap-4 max-w-md w-full bg-gray-800/80 p-5 mt-7 rounded-2xl scroll-m-20"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
